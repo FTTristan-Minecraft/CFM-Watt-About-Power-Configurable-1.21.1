@@ -19,6 +19,7 @@ Full credit for the original mod and its content goes to MrCrayfish. Thank you f
 
 - `maximumNodesInCircuitBreakerNetwork` (default 10000): nodes a single circuit breaker can power.
 - `energyDrawPerTick` (default 1.0): energy an online breaker consumes every tick. Fractions are exact, e.g. `0.1` is 1 energy every 10 ticks.
+- `lightningStrikeOutageRadius` (default 30): breakers within this many blocks of a lightning strike switch off. `0` disables the outage completely.
 - `nodeSearchIntervalTicks` (default 10): how often a breaker rescans its network. The result is reused in between, which keeps big networks cheap.
 
 Only nodes inside Furniture Refurbished's own `powerableAreaRadius` can be reached by a breaker.

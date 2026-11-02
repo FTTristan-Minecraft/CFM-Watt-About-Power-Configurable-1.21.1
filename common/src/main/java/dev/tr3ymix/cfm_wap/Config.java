@@ -38,8 +38,9 @@ public class Config {
             public final IntProperty nodeSearchIntervalTicks = IntProperty.create(10, 1, 200);
 
             @ConfigProperty(name = "lightningStrikeOutageRadius", comment = """
-                The radius (in blocks) within which the circuit breaker is disabled when a lightning bolt occurs.""")
-            public final IntProperty lightningStrikeOutageRadius = IntProperty.create(30, 15, 1024);
+                The radius (in blocks) within which the circuit breaker is disabled when a lightning bolt occurs.
+                Set to 0 to disable this entirely, lightning then never switches off circuit breakers.""")
+            public final IntProperty lightningStrikeOutageRadius = IntProperty.create(30, 0, 1024);
         }
     }
 }

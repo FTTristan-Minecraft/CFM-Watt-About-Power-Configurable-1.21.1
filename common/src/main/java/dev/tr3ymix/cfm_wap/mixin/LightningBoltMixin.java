@@ -23,12 +23,16 @@ public class LightningBoltMixin {
 
         if(!level.isClientSide() && level instanceof ServerLevel serverLevel){
 
+            int radius = Config.SERVER.electricity.lightningStrikeOutageRadius.get();
+            // A radius of 0 turns the lightning outage off
+            if(radius <= 0){
+                return;
+            }
+
             BlockPos pos = bolt.blockPosition();
 
-            int radius = Config.SERVER.electricity.lightningStrikeOutageRadius.get();
-
             for(BlockPos blockPos : CircuitBreakerCache.get(serverLevel)){
-                if(blockPos.distSqr(pos) <= radius * radius){
+                if(blockPos.distSqr(pos) <= (double) radius * radius){
                     BlockEntity blockEntity = serverLevel.getBlockEntity(blockPos);
 
                     if(blockEntity instanceof CircuitBreakerBlockEntity breaker){
