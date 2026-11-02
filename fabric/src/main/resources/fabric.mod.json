@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "cfm_wap",
+  "version": "${version}",
+  "name": "CFM Refurbished: Watt About Power?",
+  "description": "Introduces a circuit breaker block that powers the electricity network in \"MrCrayfish's Furniture Mod: Refurbished\" using power from other mods.",
+  "authors": [
+    "Tr3yMix"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "MIT",
+  "icon": "assets/fabric/logo.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.tr3ymix.cfm_wap.CFM_WAP_Fabric"
+    ],
+    "client": [
+      "dev.tr3ymix.cfm_wap.client.CFM_WAP_FabricClient"
+    ]
+  },
+  "mixins": [
+    "cfm_wap.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.17.2",
+    "minecraft": "~1.21.1",
+    "java": ">=17",
+    "architectury": ">=13.0.8",
+    "fabric-api": "*",
+    "framework": ">=0.9.6",
+    "refurbished_furniture": ">=1.0.16"
+  },
+  "suggests": {
+    "another-mod": "*"
+  },
+  "custom": {
+    "framework": {
+      "configs": [
+        "dev.tr3ymix.cfm_wap.Config"
+      ]
+    }
+  }
+}
+

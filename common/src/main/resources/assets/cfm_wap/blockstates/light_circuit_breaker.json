@@ -1,0 +1,49 @@
+{
+  "variants": {
+    "facing=east,open=false": {
+      "model": "cfm_wap:block/light_circuit_breaker_closed",
+      "y": 270
+    },
+    "facing=east,open=true,powered=false": {
+      "model": "cfm_wap:block/light_circuit_breaker_open",
+      "y": 270
+    },
+    "facing=east,open=true,powered=true": {
+      "model": "cfm_wap:block/light_circuit_breaker_open_powered",
+      "y": 270
+    },
+    "facing=north,open=false": {
+      "model": "cfm_wap:block/light_circuit_breaker_closed",
+      "y": 180
+    },
+    "facing=north,open=true,powered=false": {
+      "model": "cfm_wap:block/light_circuit_breaker_open",
+      "y": 180
+    },
+    "facing=north,open=true,powered=true": {
+      "model": "cfm_wap:block/light_circuit_breaker_open_powered",
+      "y": 180
+    },
+    "facing=south,open=false": {
+      "model": "cfm_wap:block/light_circuit_breaker_closed"
+    },
+    "facing=south,open=true,powered=false": {
+      "model": "cfm_wap:block/light_circuit_breaker_open"
+    },
+    "facing=south,open=true,powered=true": {
+      "model": "cfm_wap:block/light_circuit_breaker_open_powered"
+    },
+    "facing=west,open=false": {
+      "model": "cfm_wap:block/light_circuit_breaker_closed",
+      "y": 90
+    },
+    "facing=west,open=true,powered=false": {
+      "model": "cfm_wap:block/light_circuit_breaker_open",
+      "y": 90
+    },
+    "facing=west,open=true,powered=true": {
+      "model": "cfm_wap:block/light_circuit_breaker_open_powered",
+      "y": 90
+    }
+  }
+}

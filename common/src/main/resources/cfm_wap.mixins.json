@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "package": "dev.tr3ymix.cfm_wap.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "minVersion": "0.8",
+  "client": [
+  ],
+  "mixins": [
+    "CFMComponentsMixin",
+    "CFMPoweredItemMixin",
+    "LightningBoltMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
